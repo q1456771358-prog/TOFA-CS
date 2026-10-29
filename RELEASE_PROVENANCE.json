@@ -1,0 +1,10 @@
+{
+  "release_identity": "TOFA-CS",
+  "method": "Target-Shift-Aware One-for-All Community Search on Unseen Graphs",
+  "source_graphs": ["texas", "photo", "dblp"],
+  "unseen_target_graphs": ["wisconsin", "cora", "citeseer", "cs", "physics", "reddit"],
+  "pretrained_seed": 0,
+  "training_epochs": 10,
+  "implementation_status": "verified"
+}
+

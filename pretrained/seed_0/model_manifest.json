@@ -1,0 +1,49 @@
+{
+  "release_identity": "TOFA-CS",
+  "seed": 0,
+  "source_graphs": ["texas", "photo", "dblp"],
+  "training_epochs": 10,
+  "trained_model": {
+    "file": "trained_model.pt",
+    "epoch": 10,
+    "size_bytes": 17431093,
+    "sha256": "709f53feee39509fee5630dfd634dac9d7a53637dcdce922674a0bdcb709bc4c"
+  },
+  "frozen_reference": {
+    "file": "frozen_reference.pt",
+    "epoch": 0,
+    "size_bytes": 17431157,
+    "sha256": "c78d30555f90b275558b0832815f277ac43a5e724ef1760d70e037ca39be3f76"
+  },
+  "training_config": "../../configs/paper_main.json",
+  "training_config_sha256": "ad52fed0307c086ee0f3e1e5698d477a83eff8e37638f55feb6ba3f420f49120",
+  "implementation_integrity_sha256": "17f07d64410fcbe3a291254782c34a258edb952ccebff012f2940bb24f7406dc",
+  "fixed_checkpoint_results": {
+    "wisconsin": {
+      "f1": 0.3697839041209685,
+      "jaccard": 0.2268312192892241,
+      "precision": 0.353454415954353,
+      "recall": 0.3876953124999242,
+      "query_count": 100
+    },
+    "cora": {
+      "f1": 0.5938928781869144,
+      "jaccard": 0.4223667384049156,
+      "precision": 0.5309351107625851,
+      "recall": 0.6737902724219264,
+      "query_count": 100
+    },
+    "citeseer": {
+      "f1": 0.47760257839144254,
+      "jaccard": 0.3137174119247684,
+      "precision": 0.4061449534228853,
+      "recall": 0.5795734135764125,
+      "query_count": 100
+    }
+  },
+  "metric_protocol": "micro_f1_and_set_jaccard",
+  "target_labels_used_for_training": false,
+  "verification_status": "verified",
+  "verification_date": "2026-10-29"
+}
+

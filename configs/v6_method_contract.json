@@ -1,0 +1,88 @@
+{
+  "formal_constraints": {
+    "dataset_name_rules": false,
+    "new_endpoint_kernel": false,
+    "new_scoring_kernel": false,
+    "official_metrics_in_prediction": false,
+    "target_ground_truth": false,
+    "target_labels": false,
+    "target_optimizer": false,
+    "target_parameter_updates": false
+  },
+  "hierarchical_target_conditioned_search": {
+    "boundary_control": "bidirectional_expand_keep_contract",
+    "final_output_count": 1,
+    "internal_steps": {
+      "boundary_level": [
+        "boundary_state_refinement",
+        "bidirectional_boundary_control"
+      ],
+      "query_level": [
+        "query_conditioned_evidence_fusion",
+        "conditional_query_core_refinement",
+        "condition_selective_score_composition"
+      ],
+      "target_level": [
+        "branch_evidence_probing",
+        "target_condition_inference"
+      ]
+    },
+    "public_hierarchy": {
+      "boundary_level": "boundary_level_endpoint_regulation",
+      "query_level": "query_level_evidence_and_core_calibration",
+      "target_level": "target_level_retrieval_conditioning"
+    },
+    "query_core_control": "target_conditioned_query_evidence",
+    "query_fusion_control": "per_query_continuous_alpha",
+    "score_composition": "base_interpolation_plus_bounded_condition_correction",
+    "target_condition_source": "unlabeled_query_workload_statistics",
+    "target_side_learning": false
+  },
+  "immutable_v575_preset": "v575_strict_one_for_all_target_guidance",
+  "inherited_reference_scope": {
+    "claim": "Stage A passed: score-aligned with bounded prediction drift; not exact ordered equivalence",
+    "five_target_mean_score": "10/10",
+    "five_target_units": 165,
+    "protocol_clean_units": 165,
+    "reddit": "pending separate evidence package",
+    "target_evidence_clean_units": 165
+  },
+  "method_identity": "V575 strict G003_RHO090_CORE125",
+  "private_v575_overrides": {
+    "dual_boundary_plateau_ceiling_ratio": 0.9,
+    "dual_state_profile_core_weight_boundary": 0.25,
+    "dual_state_profile_core_weight_moderate": 0.275,
+    "dual_state_profile_core_weight_shift": 0.1,
+    "dual_state_profile_core_weight_stable": 0.125,
+    "dual_state_profile_core_weight_strong": 0.0,
+    "ratio_guidance_weight": 0.03
+  },
+  "protocol": "v58-hierarchical-runtime-evidence-gated-v3",
+  "public_method_preset": "v6_target_evidence_hierarchical_search",
+  "release_identity": "OFA-CS V6",
+  "runtime_trace_policy": {
+    "boundary_probe_action_binding_required": true,
+    "effective_core_weight_inference_forbidden": true,
+    "missing_runtime_fields_are_reported_not_inferred": true,
+    "observed_runtime_state_separated_from_interpretation": true,
+    "protocol_report_required": true,
+    "runtime_diagnostics_in_prediction": false,
+    "runtime_fact_defaults_forbidden": true,
+    "target_evidence_report_required": true
+  },
+  "scientific_problems": {
+    "target_representation_shift": "target_evidence_guided_diffusion",
+    "target_retrieval_decision_shift": "hierarchical_target_conditioned_community_search"
+  },
+  "target_evidence_guided_diffusion": {
+    "enable_density_ratio_guidance": false,
+    "evidence_trust": 0.03,
+    "historical_compatibility_field": "ratio_guidance_weight",
+    "mode": "diagonal_gaussian",
+    "parameter_free": true,
+    "target_optimizer_steps": 0,
+    "target_parameter_updates": 0,
+    "trainable_target_estimator": false
+  },
+  "training_checkpoint_source": "V575_NO_CDSS_CONTROL_SEED012 (A4 no-CDSS/no-SCPC)"
+}

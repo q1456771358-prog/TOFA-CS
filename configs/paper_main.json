@@ -1,0 +1,28 @@
+{
+  "release_identity": "TOFA-CS",
+  "protocol": "paper main experiment",
+  "source_graphs": ["texas", "photo", "dblp"],
+  "target_graphs": ["wisconsin", "cora", "citeseer", "cs", "physics", "reddit"],
+  "seeds": [0, 1, 2],
+  "epochs": 10,
+  "learning_rate": 0.0005,
+  "aligned_feature_dim": 64,
+  "hidden_dim": 512,
+  "local_tokens": 10,
+  "maximum_propagation_order": 4,
+  "diffusion_training_steps": 200,
+  "diffusion_inference_steps": 50,
+  "batch_size": 10000,
+  "source_weighting": "step_weighted",
+  "source_repeat_weights": {"texas": 1, "photo": 1, "dblp": 3},
+  "training_override": "configs/final_training_override.json",
+  "inference_override": "configs/inference_override.json",
+  "boundary_truncation_ceiling": 0.9,
+  "community_core_refinement_strength": 1.25,
+  "selection_protocol": "best epoch per target and metric within each seed; mean and sample standard deviation across seeds",
+  "evaluate_every_saved_epoch": true,
+  "target_labels_for_training": false,
+  "target_ground_truth_for_training": false,
+  "target_ground_truth_for_offline_evaluation_only": true
+}
+

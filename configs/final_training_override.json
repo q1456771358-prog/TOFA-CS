@@ -1,0 +1,5 @@
+{
+  "enable_state_conditioned_community_pic_loss": false,
+  "enable_controlled_error_state_synthesis_loss": false,
+  "loss_gradient_diagnostics_every": 0
+}

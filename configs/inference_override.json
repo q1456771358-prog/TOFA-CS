@@ -1,0 +1,9 @@
+{
+  "ratio_guidance_weight": 0.03,
+  "dual_boundary_plateau_ceiling_ratio": 0.90,
+  "dual_state_profile_core_weight_strong": 0.0,
+  "dual_state_profile_core_weight_moderate": 0.275,
+  "dual_state_profile_core_weight_boundary": 0.25,
+  "dual_state_profile_core_weight_shift": 0.10,
+  "dual_state_profile_core_weight_stable": 0.125
+}

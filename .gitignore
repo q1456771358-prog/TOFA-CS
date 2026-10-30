@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store
+
+results/*
+!results/.gitkeep
+
+# Source datasets are downloaded separately.
+data/texas*
+data/photo*
+data/dblp*
+data/texas/
+data/photo/
+data/dblp/
+
+# Optional large targets are not bundled.
+data/citeseer*
+data/cs*
+data/physics*
+data/reddit*
+data/citeseer/
+data/cs/
+data/physics/
+data/reddit/
+
+checkpoints/
+outputs/
+*.log
+*.tmp
